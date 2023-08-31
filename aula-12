@@ -1,0 +1,96 @@
+// Aula-12
+//Bruno de Freitas
+
+//exercicio de interpretaçao
+
+// 1. resposta 
+/* Sera impresso no console os numeros 
+10
+50
+// se a funçao fosse impressa sem o console.log, ocorreria um erro
+
+function minhaFuncao(variavel) {
+    return variavel * 5
+    }
+    console.log(minhaFuncao(2))
+    console.log(minhaFuncao(10))
+    
+// 2. resposta
+//true, true, false
+//Essa funçao vai se incluir cenoura no texto, ele ira declara verdadeiro
+//Na primeira saida ele ira mostra como resultado verdadeiro
+//na segunda saida, ele ira mostra o resultado como verdadeiro
+//na terceira execuçao ele mostrara o resultado tambem como verdadeiro
+
+let textoDoUsuario = prompt("Insira um texto");
+const outraFuncao = function(texto) {
+return texto.toLowerCase().includes("cenoura")
+}
+const resposta = outraFuncao(textoDoUsuario)
+console.log(resposta)
+
+//exercicio de escrita 1
+//
+function dadospessoais(nome){
+    const pergunta = prompt("Qual o seu nome?");
+    console.log("Ola", pergunta);
+    let b = prompt("Qual a sua idade?")
+    console.log(b);
+    let c = prompt("Onde voce mora?");
+    console.log(c);
+    let d = prompt("Qual a sua profissão?");
+    console.log(d);
+    console.log("Eu me chamo", pergunta,"tenho", b, "anos","moro em", c,"e trabalho como", d);
+}
+dadospessoais();
+
+//exercicio 2
+    function numero(n1, n2) {
+       return n1 + n2;
+    }
+
+    let pergunta1 = Number(prompt("Escolha um numero")); 
+    let pergunta2 = Number(prompt("Escolha outro numero"));
+    console.log(numero(pergunta1, pergunta2));
+
+//exercicio 2
+//2
+function numero(n1, n2){
+    return n1 >= n2
+}
+let n1 = prompt("Escolha um numero");
+let n2 = prompt("Escolha outro numero");
+console.log(numero(n1, n2));
+
+function par(p1){
+    return (p1 %2 === 0);
+}
+let n3 = Number(prompt("Escolha um numero"));
+console.log(par(n3));
+
+
+//3
+function frase(d1){
+    return d1;
+}
+let d2 = prompt("Digite uma mensagem");
+console.log(frase(d2.length));
+console.log(frase(d2.toUpperCase()));
+
+function tamanhoEMaiusculas(a){
+    return a.length + " " + a.toUpperCase();
+}
+*/
+//exercicio 3
+
+function operaçoes(soma, subtraçao, multiplicaçao, divisao){
+    n1 = Number(30);
+    n2 = Number(3);
+    return console.log("Numeros inseridos:", n1, "e", n2,
+    "soma", n1 + n2,
+    "subtraçao", n1 - n2,
+    "multiplicaçao", n1 * n2,
+    "divisão", n1 / n2);
+
+}
+console.log(operaçoes());
